@@ -1,4 +1,3 @@
---test
 SELECT distinct
 Year		= coalesce(ABC.Year, D.Year)
 , Month		= coalesce(ABC.Month, D.Month)
