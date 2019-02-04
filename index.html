@@ -1,0 +1,101 @@
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+
+
+// var a = 1;
+
+// function tes(a,b){
+// 	c = a * a * a + b * b * b;
+// 	return c  ;
+// }
+
+
+// alert(tes(1,2));
+// alert(tes(3,4));
+// alert(tes(4,5));
+
+
+// function tes(a,b,c){
+// 	return a + b + c;
+// }
+
+// console.log(tes(2,3,4));
+
+
+// for (var i = 10; i >= 1 ; i--){
+// 	console.log(i);
+// }
+
+//rekursif dan basecase
+// function tampilAngka(n){
+// 	if(n===0){ return;} //basecase
+// 	console.log(n);
+// 	tampilAngka(n-2);
+
+// }
+
+// tampilAngka(10);
+
+var mhs1  = {
+	nama : "Ari",
+	umur : {
+		tahun : 31,
+		bulan : 3
+	},
+	ips : [3.00,3.20,3.19,3.5],
+	alamat : {
+		jalan : "Wijaya Kusuma",
+		kota : "Bandar Lampung",
+		prov : "Lampung"
+	}
+};
+
+
+
+var mhs2  = {
+	nama : "Joni",
+	umur : {
+		tahun : 28,
+		bulan : 3
+	},
+	ips : [3.00,3.20,3.19,3.5],
+	alamat : {
+		jalan : "Wijaya Kusuma",
+		kota : "Bandung",
+		prov : "Jawa Barat"
+	}
+};
+
+
+//function declaration
+function buatObjekMahasiswa(nama,nrp,email,jurusan){
+	var mhs = {};
+	mhs.nama = nama;
+	mhs.nrp = nrp;
+	mhs.email = email;
+	mhs.jurusan = jurusan;
+	return mhs;
+}
+
+var mhs3 = buatObjekMahasiswa("Hendra","02421010","hend@yahoo.com","Tek Informatika");
+var mhs4 = buatObjekMahasiswa("Desy","02421011","dedes@yahoo.com","Ekonomi");
+
+
+
+
+
+
+//constructor
+//https://www.youtube.com/watch?v=bUZKDBgJFIM&list=PLFIM0718LjIWXagluzROrA-iBY9eeUt4w&index=42
+function Mahasiswa(nama,nrp,email,jurusan) {
+	this.nama = nama;
+	this.nrp = nrp;
+	this.email = email;
+	this.jurusan = jurusan;
+}
+
+var mhs5 = new Mahasiswa("yanto","02411090","yanto@lamongan.com","tata boga");
+document.write(mhs5.nama);
+    </script>
+
+    <!-- <button type="button" onclick="document.write(mhs3.nama)">Try it</button> -->
